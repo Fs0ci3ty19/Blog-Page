@@ -1,0 +1,309 @@
+.img-container {
+    min-height: 75vh;
+    background-image: url(https://images.hdqwalls.com/download/anime-ninja-4k-lo-1920x1080.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.353);
+}
+
+.f-adj {
+    display: flex;
+    align-items: center;
+}
+
+.adj {
+    display: flex;
+    align-items: flex-end;
+    padding: 0rem 5rem !important;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .adj {
+        justify-content: center;
+        align-items: center;
+        padding: 0.625rem !important;
+    }
+}
+
+
+
+.ef {
+    background-color: rgba(35, 34, 34, 0.649);
+    border-radius: 10px;
+}
+
+
+
+
+
+
+/*header {
+    width: auto;
+    height: fit-content;
+}*/
+
+/*
+
+.time {
+    background: linear-gradient(90deg, rgba(58, 76, 180, 1) 0%, rgba(253, 29, 29, 1) 100%);
+    width: 100%;
+    height: 50px;
+
+}
+
+.time-nav {
+    height: inherit;
+    margin-inline: 160px;
+
+}
+
+.time-nav-items {
+    list-style: none;
+    width: fit-content;
+    height: 100%;
+    float: left;
+}
+
+.time-nav .time-nav-items li {
+    display: inline-block;
+    padding: 15px 5px 15px 5px;
+}
+
+.time-nav .time-nav-items li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+
+.date {
+    float: right;
+    height: 100%;
+    font-size: 13px;
+    padding: 15px 5px 15px 5px;
+    color: white;
+}
+
+
+.date span {
+    background-color: rgba(255, 255, 255, 0.211);
+    padding-inline: 8px;
+    border-radius: 20px;
+}
+
+*/
+/**********************/
+/*
+.menu-bar {
+    width: 100%;
+    height: 4.438rem;
+}
+
+.menu-bar-wrapper {
+    height: inherit;
+    margin-inline: 160px;
+}
+
+
+.menu-bar .logo {
+    width: fit-content;
+    height: 100%;
+    float: left;
+    padding: 15px 0px 15px 4px;
+}
+
+.menu-bar .logo img {
+    width: 102.03px;
+    height: 34.99px;
+}
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu-social {
+    width: 250px;
+    height: 100%;
+    float: right;
+}
+
+
+.menu-social .social-child {
+    list-style: none;
+    width: fit-content;
+    height: 100%;
+}
+
+
+
+.menu-social .social-child li {
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 5px 20px 5px;
+}
+
+
+
+
+
+.round-social {
+    border: 50%;
+    width: 45px;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgba(149, 147, 147, 0.166);
+}
+
+
+.round-social:hover {
+    background-color: rgba(149, 147, 147, 0.282);
+    cursor: pointer;
+}
+
+
+.badge-one {
+    background-color: #222ddc;
+    color: white;
+    font-size: 8px;
+    padding: 2px 8px 2px 8px;
+    border-radius: 10px;
+}
+
+
+.badge-two {
+    background-color: #f74539;
+    color: white;
+    font-size: 8px;
+    padding: 2px 8px 2px 8px;
+    border-radius: 10px;
+}
+
+
+.badge-three {
+    background-color: #ffe500;
+    font-size: 8px;
+    padding: 2px 8px 2px 8px;
+    border-radius: 10px;
+}
+
+
+/********************/
+
+
+/*
+.title-wraper {
+    width: auto;
+    height: 200px;
+}
+
+.title-wraper.img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+  }
+
+.main-nav,
+.drop-nav {
+  background: white;
+}
+.main-nav {
+  float: left;
+  border-radius: 4px;
+  margin-top: 20px;
+  line-height: 5px;
+  background-color: aqua;
+ 
+}
+  .main-nav > li {
+    float: left;
+    width: fit-content;
+  }
+  .main-nav li:first-child {
+    border-left: none;
+  }
+  .main-nav a {
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+  }
+.dropdown {
+  position: relative;
+}
+
+.drop-nav,
+.flyout-nav {
+  position: absolute;
+  display: none;
+}
+.drop-nav li {
+  border-bottom: 1px solid rgba(255,255,255,.2);
+}
+.dropdown:hover > .drop-nav {
+  display: block;
+}
+
+*/
+
+/*
+li {
+    display: flex;
+    width: 25%;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: #4a2db6;
+    height: 40px;
+    padding: 5px;
+    color: white;
+}
+
+.nob {
+    list-style-type: disc;
+    display: flex;
+    flex-wrap: wrap;
+}*/
+

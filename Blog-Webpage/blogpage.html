@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <script src="https://kit.fontawesome.com/2dd459cb53.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <script defer src="js/anime.js"></script>
+
+    <title>Blog</title>
+</head>
+
+<body>
+    <!--Search Page-->
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Search</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Search for desired blog..
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Back to Top button -->
+    <button type="button" class="btn btn-dark btn-floating btn-lg " id="btn-back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <header>
+
+        <!--Date Info NavBar-->
+        <nav class="navbar navbar-expand-lg fw-bold"
+            style="background: linear-gradient(90deg, rgba(58, 76, 180, 1) 0%, rgba(253, 29, 29, 1) 100%); height: 2.5rem;">
+            <div class="container-lg ps-2">
+
+                <div class="collapse navbar-collapse" style="font-size: 0.82rem;" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item my-auto">
+                            <a class="nav-link text-light ps-0" href="#">Home</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link text-light" href="#">Member</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link text-light" href="#">Special Offer</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link text-light" href="#">Info!!</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="navbar-brand text-light ms-auto me-0" style="font-size: 0.82rem;">
+                    <span class="px-3 py-1 rounded-pill" style="background-color: rgba(255, 255, 255, 0.211);">Current
+                        Date:</span> &nbsp;17 August,2022
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!--Brand Logo NavBar-->
+        <nav class="navbar navbar-expand-lg bg-light navbar-vhh" id="navbar_top">
+            <div class="container-lg px-2">
+                <a class="navbar-brand">
+                    <img src="images/logo.png" alt="NO image!" width="102.03" height="34.99">
+                </a>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav h6">
+
+                        <!--Home-->
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="nav-link text-black" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                                    Home
+                                    <span class="fa-solid fa-chevron-down" style="font-size:0.5rem;"></span>
+                                </a>
+                                <ul class="dropdown-menu mt-3 py-1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!--Features-->
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="nav-link text-black" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                                    Features
+                                    <div class="badge rounded-pill"
+                                        style="font-size:0.5rem; background-color: #222DDC;">New
+                                    </div>
+                                    <span class="fa-solid fa-chevron-down" style="font-size:0.5rem;"></span>
+                                </a>
+                                <ul class="dropdown-menu mt-3 py-1">
+                                    <li><a class="dropdown-item border-bottom border-secondary" href="#">Action</a></li>
+                                    <li><a class="dropdown-item border-bottom border-secondary" href="#">Another
+                                            action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!--Gaming-->
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="#">Gaming</a>
+                        </li>
+
+                        <!--Active-->
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="#">Active</a>
+                        </li>
+
+                        <!--Business-->
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="nav-link text-black" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                                    Business
+                                    <div class="badge rounded-pill"
+                                        style="font-size:0.5rem; background-color: #F74539;">Hot
+                                    </div>
+                                    <span class="fa-solid fa-chevron-down" style="font-size:0.5rem;"></span>
+                                </a>
+                                <ul class="dropdown-menu mt-3 py-1">
+                                    <li><a class="dropdown-item border-bottom border-secondary" href="#">Action</a></li>
+                                    <li><a class="dropdown-item border-bottom border-secondary" href="#">Another
+                                            action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!--Shop-->
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="nav-link text-black" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                                    Shop
+                                    <div class="badge rounded-pill"
+                                        style="font-size:0.5rem; background-color: #FFE500; color: black;">Now</div>
+                                    <span class="fa-solid fa-chevron-down" style="font-size:0.5rem;"></span>
+                                </a>
+                                <ul class="dropdown-menu mt-3 py-1">
+                                    <li><a class="dropdown-item border-bottom border-secondary" href="#">Action</a></li>
+                                    <li><a class="dropdown-item border-bottom border-secondary" href="#">Another
+                                            action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!--Social Container-->
+                <div class=".container-md">
+                    <ul class="navbar-nav">
+
+                        <!--Social Media Icon-->
+                        <div class="collapse navbar-collapse">
+                            <ul class="navbar-nav gap-2">
+                                <li class="nav-item round-social"><span class=" fa-brands fa-facebook-f"></span></li>
+                                <li class="nav-item round-social"><span class=" fa-brands fa-google-plus-g"></span></li>
+                                <li class="nav-item round-social"><span class="fa-brands fa-behance"></span></li>
+                            </ul>
+                        </div>
+
+                        <!--Search and Hamburger Menu-->
+                        <div class="container-lg ms-0 pe-0">
+                            <span class="round-social fa-solid fa-magnifying-glass" data-bs-toggle="modal"
+                                data-bs-target="#myModal"></span>
+                            <span class="round-social fa-solid fa-bars d-lg-none d-inline" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight">
+                            </span>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Off-Canvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+
+        <!--OffCanvas Header-->
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <!--OffCanvas Body-->
+        <div class="offcanvas-body">
+            <div class="container xColor rounded-4">
+                <div class="navbar">
+                    <ul class="navbar-nav h6">
+
+                        <li class="nav-item">
+
+
+                            <div class="dropdown">
+                                <a class="nav-link text-black" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Home
+                                    <span class="fa-solid fa-chevron-down" style="font-size:0.5rem;"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+
+
+                            <div class="dropdown">
+                                <a class="nav-link text-black" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Features
+                                    <div class="badge rounded-pill"
+                                        style="font-size:0.5rem; background-color: #222DDC;">New
+                                    </div>
+                                    <span class="fa-solid fa-chevron-down" style="font-size:0.5rem;"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="#">Gaming</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="#">Active</a>
+                        </li>
+
+                        <li class="nav-item">
+
+                            <div class="dropdown">
+                                <a class="nav-link text-black" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Business
+                                    <div class="badge rounded-pill"
+                                        style="font-size:0.5rem; background-color: #F74539;">New
+                                    </div>
+                                    <span class="fa-solid fa-chevron-down" style="font-size:0.5rem;"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+
+
+                            <div class="dropdown">
+                                <a class="nav-link text-black" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Shop
+                                    <div class="badge rounded-pill text-dark"
+                                        style="font-size:0.5rem; background-color: #FFE500;">New
+                                    </div>
+                                    <span class="fa-solid fa-chevron-down" style="font-size:0.5rem;"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <ul class="d-flex align-items-center justify-content-center gap-2 p-0 pb-4">
+                    <li class="nav-item round-social"><span class=" fa-brands fa-facebook-f"></span></li>
+                    <li class="nav-item round-social"><span class=" fa-brands fa-google-plus-g"></span></li>
+                    <li class="nav-item round-social"><span class="fa-brands fa-behance"></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Carosuel Design-->
+    <!--<div class="container-lg mt-4">
+        <div class="row  gx-2 img-container" style="min-height: 70vh;">
+
+            <div class="d-flex flex-column ef align-content-center">
+
+
+                <div class="container adj flex-fill">
+                    <div class="row align-items-center">
+                        <div class="col text-light">
+                            <h6><span class="badge bg-primary">Business</span></h6>
+                            <h1 class="h1x">This is a great show to watch</h1>
+                            <Img class="rounded-circle img-fluid me-2" src="images/favicon.jpg" width="30px"
+                                height="30px"></Img><span>Anna Nikova</span><span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container d-flex align-items-center d-none d-sm-none d-md-flex flex-fill">
+                    <div class="d-flex justify-content-around w-100 p-3">
+
+                        <div class="p-2 text-light f-adj"><Img class="rounded-circle img-fluid me-2"
+                                src="images/favicon.jpg" width="60px" height="60px"></Img><span
+                                class="text-truncate">People are enjoy the</span></div>
+                        <div class="p-2 text-light f-adj"><Img class="rounded-circle img-fluid me-2"
+                                src="images/favicon.jpg" width="60px" height="60px"></Img><span
+                                class="text-truncate">People are enjoy the</span></div>
+                        <div class="p-2 text-light f-adj"><Img class="rounded-circle img-fluid me-2"
+                                src="images/favicon.jpg" width="60px" height="60px"></Img><span
+                                class="text-truncate">People are enjoy the</span></div>
+                        <div class="p-2 text-light f-adj"><Img class="rounded-circle img-fluid me-2"
+                                src="images/favicon.jpg" width="60px" height="60px"></Img><span
+                                class="text-truncate">People are enjoy the</span></div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>-->
+
+    <div class="container-lg p-md-2 pt-md-3 pt-2 pb-3 px-2">
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade vhh" data-bs-ride="carousel">
+
+            <!--Indicator@Container-->
+            <div class="carousel-indicators justify-content-between mb-md-5 mx-3 d-md-flex d-none">
+
+                <!--Indicator_1-->
+                <div class="d-flex flex-lg-row flex-column text-lg-start text-center align-items-center">
+                    <div class="d-flex">
+                        <span
+                            style="background-image: url(images/iris.jpg); background-position: center center; width: 60px; height: 60px; background-size: cover; border-radius: 50%;"
+                            data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1" alt="">
+                        </span>
+                    </div>
+
+                    <div class="container">
+                        <h6 class="mb-0 text-light">People are enjoy the job that they love</h6>
+                    </div>
+                </div>
+
+                <!--Indicator_2-->
+                <div class="d-flex flex-lg-row flex-column text-lg-start text-center align-items-center">
+                    <div class="d-flex">
+                        <span
+                            style="background-image: url(images/socks.jpg); background-position: center center; width: 60px; height: 60px; background-size: cover; border-radius: 50%;"
+                            data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2" alt="">
+                        </span>
+                    </div>
+
+                    <div class="container">
+                        <h6 class="mb-0 text-light text-lg-wrap">Every photographer needs to shoot this photo</h6>
+                    </div>
+                </div>
+
+                <!--Indicator_3-->
+                <div class="d-flex flex-lg-row flex-column text-lg-start text-center align-items-center">
+                    <div class="d-flex">
+                        <span
+                            style="background-image: url(images/buuble.jpg); background-position: center center; width: 60px; height: 60px; background-size: cover; border-radius: 50%;"
+                            data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3" alt="">
+                        </span>
+                    </div>
+
+                    <div class="container">
+                        <h6 class="mb-0 text-light text-lg-wrap">Have a good time with my friend and enjoyed</h6>
+                    </div>
+                </div>
+
+                <!--Indicator_4-->
+                <div class="d-flex flex-lg-row flex-column text-lg-start text-center align-items-center">
+
+                    <div class="d-flex">
+                        <span
+                            style="background-image: url(images/ipone.jpg); background-position: center center; width: 60px; height: 60px; background-size: cover; border-radius: 50%;"
+                            data-bs-target="#carouselExampleFade" data-bs-slide-to="3" aria-label="Slide 4"
+                            alt=""></span>
+                    </div>
+
+                    <div class="container">
+                        <h6 class="mb-0 text-light">This is a great photo and nice for shooting</h6>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!--Inner Carousel-->
+            <div class="carousel-inner vhh rounded-3 hidden">
+
+                <!-- Carousel-Item-1 -->
+                <div class="carousel-item active card text-bg-dark border border-0">
+                    <div class="container-fluid bg-primary vhh"
+                        style="background-image: url(images/iris.jpg); background-size: cover; background-position: center center;">
+                    </div>
+                    <div class="card-img-overlay flex-s px-5">
+                        <span class="badge opacity-100" style="background-color: #0015ff;">BUSINESS</span>
+                        <h5 class="h1x py-3 opacity-100">People are enjoy the job that they love</h5>
+                        <span>
+                            <img class="img-fluid rounded-circle" width="30px" height="30px" src="images/favicon.jpg"
+                                alt="">
+                            <a href="#" class="a-mod text-light">Anna Nikova</a>
+                            <i class="fa-solid fa-clock ms-2" style="font-size: 0.7rem;">
+                                &nbsp; Sep 24, 2022
+                            </i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Carousel-Item-2 -->
+                <div class="carousel-item card text-bg-dark border border-0">
+                    <div class="container-fluid bg-primary vhh"
+                        style="background-image: url(images/socks.jpg); background-size: cover; background-position: center center;">
+                    </div>
+                    <div class="card-img-overlay flex-s px-5">
+                        <span class="badge" style="background-color: #6b34ba;">GAMING</span>
+                        <h5 class="h1x py-3">Every photographer needs to shoot this photo</h5>
+                        <span>
+                            <img class="img-fluid rounded-circle" width="30px" height="30px" src="images/favicon.jpg"
+                                alt="">
+                            <a href="#" class="a-mod text-light">Anna Nikova</a>
+                            <i class="fa-solid fa-clock ms-2" style="font-size: 0.7rem;">
+                                &nbsp; Sep 24, 2022
+                            </i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Carousel-Item-3 -->
+                <div class="carousel-item card text-bg-dark border  border-0 ">
+                    <div class="container-fluid bg-primary vhh"
+                        style="background-image: url(images/buuble.jpg); background-size: cover; background-position: center center;">
+                    </div>
+                    <div class="card-img-overlay flex-s px-5">
+                        <span class="badge" style="background-color: #ed1c1c;">ACTIVE</span>
+                        <h5 class="h1x py-3">Have a good time with my friend and enjoyed</h5>
+                        <span>
+                            <img class="img-fluid rounded-circle" width="30px" height="30px" src="images/favicon.jpg"
+                                alt="">
+                            <a href="#" class="a-mod text-light">Anna Nikova</a>
+                            <i class="fa-solid fa-clock ms-2" style="font-size: 0.7rem;">
+                                &nbsp; Sep 24, 2022
+                            </i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Carousel-Item-4 -->
+                <div class="carousel-item card text-bg-dark border  border-0 ">
+                    <div class="container-fluid bg-primary vhh"
+                        style="background-image: url(images/ipone.jpg); background-size: cover; background-position: center center;">
+                    </div>
+                    <div class="card-img-overlay flex-s px-5">
+                        <span class="badge" style="background-color: #d66300;">SCIENCE</span>
+                        <h5 class="h1x py-3">This is a great photo and nice for shooting</h5>
+
+                        <span>
+                            <img class="img-fluid rounded-circle" width="30px" height="30px" src="images/favicon.jpg"
+                                alt="">
+                            <a href="#" class="a-mod text-light">Anna Nikova</a>
+                            <i class="fa-solid fa-clock ms-2" style="font-size: 0.7rem;">
+                                &nbsp; Sep 24, 2022
+                            </i>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!--Title Divider-->
+    <div class="container-lg mt-md-5 px-2">
+        <h2>Editor's Choice</h2>
+    </div>
+
+
+    <!--Flex Wrap Grid Content-->
+    <!--Main Flex Container Wraper-->
+    <div class="container-xlg p-0 d-flex flex-column  mb-3 flex-wrap flex-lg-nowrap">
+
+        <!--Flex Container_One Wrap-->
+        <div class="container-lg p-0 gap-2 d-flex my-3 flex-wrap flex-lg-nowrap">
+
+            <div class="card border border-0 p-2 delays Lxhidden" style="width: 100%;">
+                <span class="badge mt-3 ms-3 py-2 px-3"
+                    style="position: absolute; font-weight: 500; background-color: #d66300;">Science</span>
+                <img class="img-fluid rounded-4" src="images/phone.jpg" alt="">
+                <div class="card-body ps-0">
+                    <h3>This is A Great Phone for Shooting</h3>
+                    <div class="my-3">
+                        <span>
+                            <img class="img-fluid rounded-circle" width="30px" height="30px" src="images/favicon.jpg"
+                                alt="">
+                            <a href="#" class="a-mod text-secondary">Anna Nikova</a>
+                        </span>
+                        <i class="fa-solid fa-clock ms-2 text-secondary" style="font-size: 0.7rem;">
+                            &nbsp; Sep 24, 2022
+                        </i>
+                    </div>
+                    <p class="card-text text-secondary">Some quick example text to build on the card title and make up
+                        the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+
+            <div class="card border border-0 p-2 delays Lxhidden" style="width: 100%;">
+                <span class="badge mt-3 ms-3 py-2 px-3"
+                    style="position: absolute; font-weight: 500; background-color: #36c942;">Sports</span>
+                <img class="img-fluid rounded-4" src="images/social.jpg" alt="">
+                <div class="card-body ps-0">
+                    <h3>This is A Great Phone for Shooting</h3>
+                    <div class="my-3">
+                        <span>
+                            <img class="img-fluid rounded-circle" width="30px" height="30px" src="images/favicon.jpg"
+                                alt="">
+                            <a href="#" class="a-mod text-secondary">Anna Nikova</a>
+                        </span>
+                        <i class="fa-solid fa-clock ms-2 text-secondary" style="font-size: 0.7rem;">
+                            &nbsp; Sep 24, 2022
+                        </i>
+                    </div>
+                    <p class="card-text text-secondary">Some quick example text to build on the card title and make up
+                        the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+
+
+            <div class="card border border-0 p-2 delays Lxhidden" style="width: 100%;">
+                <span class="badge mt-3 ms-3 py-2 px-3"
+                    style="position: absolute; font-weight: 500; background-color: #36c942;">Science</span>
+                <img class="img-fluid rounded-4" src="images/hippo.jpg" alt="">
+                <div class="card-body ps-0">
+                    <h3>This is A Great Phone for Shooting</h3>
+                    <div class="my-3">
+                        <span>
+                            <img class="img-fluid rounded-circle" width="30px" height="30px" src="images/favicon.jpg"
+                                alt="">
+                            <a href="#" class="a-mod text-secondary">Anna Nikova</a>
+                        </span>
+                        <i class="fa-solid fa-clock ms-2 text-secondary" style="font-size: 0.7rem;">
+                            &nbsp; Sep 24, 2022
+                        </i>
+                    </div>
+                    <p class="card-text text-secondary">Some quick example text to build on the card title and make up
+                        the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!--Flex Container_Two Wrap-->
+        <div class="container-lg p-0 gap-2 d-flex my-3 flex-wrap flex-lg-nowrap">
+
+            <div class="card border border-0 p-2 delays Lxhidden" style="width: 100%;">
+                <span class="badge mt-3 ms-3 p-2"
+                    style="position: absolute; font-weight: 500; background-color: #6b34ba;">GAMING</span>
+                <img class="img-fluid rounded-4" src="images/office-game.jpg" alt="">
+                <div class="card-body ps-0">
+                    <h3>This is A Great Phone for Shooting</h3>
+                    <div class="my-3">
+                        <span>
+                            <img class="img-fluid rounded-circle" width="30px" height="30px" src="images/favicon.jpg"
+                                alt="">
+                            <a href="#" class="a-mod text-secondary">Anna Nikova</a>
+                        </span>
+                        <i class="fa-solid fa-clock ms-2 text-secondary" style="font-size: 0.7rem;">
+                            &nbsp; Sep 24, 2022
+                        </i>
+                    </div>
+                    <p class="card-text text-secondary">Some quick example text to build on the card title and make up
+                        the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+
+
+            <div class="card border border-0 p-2 delays Lxhidden" style="width: 100%;">
+                <span class="badge mt-3 ms-3 py-2 px-3"
+                    style="position: absolute; font-weight: 500; background-color: #ed1c1c;">ACTIVE</span>
+                <img class="img-fluid rounded-4" src="images/activeG.jpg" alt="">
+                <div class="card-body ps-0">
+                    <h3>This is A Great Phone for Shooting</h3>
+                    <div class="my-3">
+                        <span>
+                            <img class="img-fluid rounded-circle" width="30px" height="30px" src="images/favicon.jpg"
+                                alt="">
+                            <a href="#" class="a-mod text-secondary">Anna Nikova</a>
+                        </span>
+                        <i class="fa-solid fa-clock ms-2 text-secondary" style="font-size: 0.7rem;">
+                            &nbsp; Sep 24, 2022
+                        </i>
+                    </div>
+                    <p class="card-text text-secondary">Some quick example text to build on the card title and make up
+                        the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+
+
+            <div class="card border border-0 p-2 delays Lxhidden" style="width: 100%;">
+                <span class="badge mt-3 ms-3 p-2"
+                    style="position: absolute; font-weight: 500; background-color: #0015ff;">BUSINESS</span>
+                <img class="img-fluid rounded-4" src="images/crowd.jpg" alt="">
+                <div class="card-body ps-0">
+                    <h3>This is A Great Phone for Shooting</h3>
+                    <div class="my-3">
+                        <span>
+                            <img class="img-fluid rounded-circle" width="30px" height="30px" src="images/favicon.jpg"
+                                alt="">
+                            <a href="#" class="a-mod text-secondary">Anna Nikova</a>
+                        </span>
+                        <i class="fa-solid fa-clock ms-2 text-secondary" style="font-size: 0.7rem;">
+                            &nbsp; Sep 24, 2022
+                        </i>
+                    </div>
+                    <p class="card-text text-secondary">Some quick example text to build on the card title and make up
+                        the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!--Content Wraper-->
+    <div class="container-fluid py-2 my-3" style="background-color: #fdeedc; height: min-content;">
+
+
+        <!--Title of Week-->
+        <div class="container-lg gx-0 py-4">
+            <h3 class="">Top Of the Week</h2>
+        </div>
+
+        <!--Image Container-->
+        <!--Image Container-->
+        <div class="container-lg d-flex flex-column flex-lg-row p-0 mb-5">
+            <div class="container-lg cus-container p-0 Lxhidden">
+
+                <div class="box p-0 mt-lg-3">
+                    <div class="imgBox" style="background-image: url(images/pool-img.jpg);">
+                    </div>
+                </div>
+                <div class="content mt-lg-3">
+
+                    <div class="ms-2 mb-4">
+                        <span class="badge" style="background-color: #0015FF;">BUSINESS</span>
+                        <h3 class="my-2" style="font-weight: 700;">It's always Fun Time and Smile In The Summer</h3>
+                        <div>
+                            <span>
+                                <img class="img-fluid rounded-circle" width="30px" height="30px"
+                                    src="images/favicon.jpg" alt="">
+                                <a href="#" class="a-mod" style="color: white;">Anna Nikova</a>
+                            </span>
+                            <i class="fa-solid fa-clock ms-2" style="font-size: 0.7rem;">
+                                &nbsp; Sep 24, 2022
+                            </i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Column container-->
+            <div class="container-lg d-flex flex-column mt-2 p-0 pt-2 w-auto my-2 mx-0">
+
+                <div class="container-lg d-flex p-lg-2 py-2 p-0 delays Rxhidden">
+                    <div class="flex-shrink-0"
+                        style="background-image: url(images/bbottel.jpg); width: 100px; height: 100px; border-radius: 15px;">
+                    </div>
+                    <div class="px-2">
+                        <span class="badge mt-0 px-3 py-2"
+                            style="background-color: #D1783C; font-size: 10px;font-weight: 500;">CRAZY</span>
+                        <h6 class="my-1 flex-lg-shrink-1">The Great Time for enjoy City View on Mountain</h6>
+                        <i class="fa-solid fa-clock text-secondary" style="font-size: 0.5rem;">
+                            &nbsp; Sep 24, 2022
+                        </i>
+                    </div>
+                </div>
+
+                <div class="container-lg d-flex p-lg-2 py-2 p-0 delays Rxhidden">
+                    <div class="flex-shrink-0"
+                        style="background-image: url(images/orange.jpg); width: 100px; height: 100px; border-radius: 15px;">
+                    </div>
+                    <div class="px-2">
+                        <span class="badge mt-0 px-3 py-2"
+                            style="background-color: #ed1c1c; font-size: 10px;font-weight: 500;">ACTIVE</span>
+                        <h6 class="my-1 flex-lg-shrink-1">Your phone can take the best photo style</h6>
+                        <i class="fa-solid fa-clock text-secondary" style="font-size: 0.5rem;">
+                            &nbsp; Sep 24, 2022
+                        </i>
+                    </div>
+                </div>
+
+                <div class="container-lg d-flex p-lg-2 py-2 p-0 delays Rxhidden">
+                    <div class="flex-shrink-0"
+                        style="background-image: url(images/architect.jpg); width: 100px; height: 100px; border-radius: 15px;">
+                    </div>
+                    <div class="px-2">
+                        <span class="badge mt-0 px-3 py-2"
+                            style="background-color: #6b34ba; font-size: 10px;font-weight: 500;">GAMING</span>
+                        <h6 class="my-1 flex-lg-shrink-1">Top 10 Best photo hunt of ice Rugby</h6>
+                        <i class="fa-solid fa-clock text-secondary" style="font-size: 0.5rem;">
+                            &nbsp; Sep 24, 2022
+                        </i>
+                    </div>
+                </div>
+
+                <div class="container-lg d-flex p-lg-2 py-2 p-0 delays Rxhidden">
+                    <div class="flex-shrink-0"
+                        style="background-image: url(images/favicon.jpg); width: 100px; height: 100px; border-radius: 15px;">
+                    </div>
+                    <div class="px-2">
+                        <span class="badge mt-0 px-3 py-2"
+                            style="background-color: #D1783C; font-size: 10px;font-weight: 500;">SCIENCE</span>
+                        <h6 class="my-1 flex-lg-shrink-1">It really great holiday and enjoy with the sea</h6>
+                        <i class="fa-solid fa-clock text-secondary" style="font-size: 0.5rem;">
+                            &nbsp; Sep 24, 2022
+                        </i>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+        <!--Three Content container-->
+        <div class="container-lg p-0">
+
+            <div class="row ">
+
+                <div class="col-lg-4 delays Lxhidden">
+                    <div class="container-lg x-cus-container p-0 me-2 mt-2">
+
+                        <div class="box p-0">
+                            <div class="x-imgBox" style="background-image: url(images/bike.jpg);">
+                            </div>
+                        </div>
+                        <div class="x-content">
+
+                            <div class="ms-2 mb-4">
+                                <span class="badge position-absolute top-0 mt-3"
+                                    style="background-color: #7FBC1F;">HEALTH</span>
+                                <h4 class="my-2" style="font-weight: 700;">This is a great toy and beautiful for short
+                                </h4>
+                                <div>
+                                    <span>
+                                        <img class="img-fluid rounded-circle" width="30px" height="30px"
+                                            src="images/favicon.jpg" alt="">
+                                        <a href="#" class="a-mod" style="color: white;">Anna Nikova</a>
+                                    </span>
+                                    <i class="fa-solid fa-clock ms-2" style="font-size: 0.7rem;">
+                                        &nbsp; Sep 24, 2022
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 delays Lxhidden">
+
+                    <div class="container-lg x-cus-container p-0 me-2 mt-2">
+
+                        <div class="box p-0">
+                            <div class="x-imgBox" style="background-image: url(images/bowl.jpg);">
+                            </div>
+                        </div>
+                        <div class="x-content">
+
+                            <div class="ms-2 mb-4">
+                                <span class="badge position-absolute top-0 mt-3"
+                                    style="background-color: #ed1c1c;">ACTIVE</span>
+                                <h4 class="my-2" style="font-weight: 700;">This is my favourite fashion that i watching
+                                </h4>
+                                <div>
+                                    <span>
+                                        <img class="img-fluid rounded-circle" width="30px" height="30px"
+                                            src="images/favicon.jpg" alt="">
+                                        <a href="#" class="a-mod" style="color: white;">Anna Nikova</a>
+                                    </span>
+                                    <i class="fa-solid fa-clock ms-2" style="font-size: 0.7rem;">
+                                        &nbsp; Sep 24, 2022
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 delays Lxhidden">
+                    <div class="container-lg x-cus-container p-0 me-2 mt-2">
+
+                        <div class="box p-0">
+                            <div class="x-imgBox" style="background-image: url(images/cat.jpg);">
+                            </div>
+                        </div>
+                        <div class="x-content">
+
+                            <div class="ms-2 mb-4">
+                                <span class="badge position-absolute top-0 mt-3"
+                                    style="background-color: #ed1c1c;">ACTIVE</span>
+                                <h4 class="my-2" style="font-weight: 700;">Nice Photo, nice colors and i can’t wait to
+                                    try</h4>
+                                <div>
+                                    <span>
+                                        <img class="img-fluid rounded-circle" width="30px" height="30px"
+                                            src="images/favicon.jpg" alt="">
+                                        <a href="#" class="a-mod" style="color: white;">Anna Nikova</a>
+                                    </span>
+                                    <i class="fa-solid fa-clock ms-2" style="font-size: 0.7rem;">
+                                        &nbsp; Sep 24, 2022
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+    <!--END Content Wraper-->
+
+    <div class="container-fluid pt-4 mb-3">
+        <div class="container-lg p-0">
+            <!--Inner content Container Row-->
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row g-0 hidden">
+                        <div class="col-lg-6">
+                            <img width="100%" height="100%" src="images/person.jpeg" class="rounded" alt="">
+                        </div>
+                        <div class="col-lg-6 gx-lg-5 gx-0">
+                            <span class="badge bg-danger px-3">ACTIVE</span><i
+                                class="text-secondary fa-solid fa-clock ms-2" style="font-size: 0.7rem;"> &nbsp; Sep 24,
+                                2022 </i> <i class="text-secondary fa-solid fa-comment-dots" style="font-size: 0.7rem;">
+                                0</i>
+                            <p class="h4">Outdoor photo shooting with sexy and beautiful</p>
+                            <p class="text-muted">Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet ut
+                                imperdiet eu, iaculis a sem. Donec vehicula luctus nunc in laoreet...</p>
+                        </div>
+                    </div>
+                    <div class="row g-0 py-5 hidden">
+                        <div class="col-lg-6 g-0 ">
+                            <img width="100%" height="100%" src="images/view.jpg" class="img-fluid rounded" alt="">
+                        </div>
+                        <div class="col-lg-6 gx-lg-5 gx-0">
+                            <span class="badge px-3" style="background-color: #D66300;">SCIENCE</span><i
+                                class="text-secondary fa-solid fa-clock ms-2" style="font-size: 0.7rem;"> &nbsp; Sep 24,
+                                2022 </i> <i class="text-secondary fa-solid fa-comment-dots" style="font-size: 0.7rem;">
+                                0</i>
+                            <p class="h4">Outdoor photo shooting with sexy and beautiful</p>
+                            <p class="text-muted">Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet ut
+                                imperdiet eu, iaculis a sem. Donec vehicula luctus nunc in laoreet...</p>
+                        </div>
+                    </div>
+
+                    <div class="row g-0 hidden">
+                        <div class="col-lg-6 g-0 ">
+                            <img width="100%" height="100%" src="images/women.jpg" class="img-fluid rounded" alt="">
+                        </div>
+                        <div class="col-lg-6 gx-lg-5 gx-0">
+                            <span class="badge px-3" style="background-color: #D66300;">SCIENCE</span><i
+                                class="text-secondary fa-solid fa-clock ms-2" style="font-size: 0.7rem;"> &nbsp; Sep 24,
+                                2022 </i> <i class="text-secondary fa-solid fa-comment-dots" style="font-size: 0.7rem;">
+                                0</i>
+                            <p class="h4">Outdoor photo shooting with sexy and beautiful</p>
+                            <p class="text-muted">Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet ut
+                                imperdiet eu, iaculis a sem. Donec vehicula luctus nunc in laoreet...</p>
+                        </div>
+                    </div>
+
+                    <div class="row g-0 py-5 hidden">
+                        <div class="col-lg-6 g-0 ">
+                            <img width="100%" height="100%" src="images/laptop.jpg" class="img-fluid rounded" alt="">
+                        </div>
+                        <div class="col-lg-6 gx-lg-5 gx-0">
+                            <span class="badge px-3" style="background-color: #36C942;">SPORTS</span><i
+                                class="text-secondary fa-solid fa-clock ms-2" style="font-size: 0.7rem;"> &nbsp; Sep 24,
+                                2022 </i> <i class="text-secondary fa-solid fa-comment-dots" style="font-size: 0.7rem;">
+                                0</i>
+                            <p class="h4">Outdoor photo shooting with sexy and beautiful</p>
+                            <p class="text-muted">Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet ut
+                                imperdiet eu, iaculis a sem. Donec vehicula luctus nunc in laoreet...</p>
+                        </div>
+                    </div>
+
+                    <div class="row g-0 hidden">
+                        <div class="col-lg-6 g-0 ">
+                            <img width="100%" height="100%" src="images/canyon.jpg" class="img-fluid rounded" alt="">
+                        </div>
+                        <div class="col-lg-6 gx-lg-5 gx-0">
+                            <span class="badge px-3" style="background-color: #36C942;">SPORTS</span><i
+                                class="text-secondary fa-solid fa-clock ms-2" style="font-size: 0.7rem;"> &nbsp; Sep 24,
+                                2022 </i> <i class="text-secondary fa-solid fa-comment-dots" style="font-size: 0.7rem;">
+                                0</i>
+                            <p class="h4">Outdoor photo shooting with sexy and beautiful</p>
+                            <p class="text-muted">Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet ut
+                                imperdiet eu, iaculis a sem. Donec vehicula luctus nunc in laoreet...</p>
+                        </div>
+                    </div>
+
+                    <div class="row g-0 py-5 hidden">
+                        <div class="col-lg-6 g-0 ">
+                            <img width="100%" height="100%" src="images/student.jpg" class="img-fluid rounded" alt="">
+                        </div>
+                        <div class="col-lg-6 gx-lg-5 gx-0">
+                            <span class="badge px-3" style="background-color: #36C942;">SPORTS</span><i
+                                class="text-secondary fa-solid fa-clock ms-2" style="font-size: 0.7rem;"> &nbsp; Sep 24,
+                                2022 </i> <i class="text-secondary fa-solid fa-comment-dots" style="font-size: 0.7rem;">
+                                0</i>
+                            <p class="h4">Outdoor photo shooting with sexy and beautiful</p>
+                            <p class="text-muted">Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet ut
+                                imperdiet eu, iaculis a sem. Donec vehicula luctus nunc in laoreet...</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <!--SOcial Icons-->
+                <div class="col-lg-4">
+
+                    <div class="container-lg text-center">
+                        <div class="row row-cols-4">
+
+                            <div class="col pt-2 font-bg delays hidden">
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook-f" style="font-size: 1.5rem; color: #45629f;"></i>
+                                </a>
+                                <span style="font-size: 0.86rem;">
+                                    <span class="d-block fw-bold">20.5k</span>
+                                    <span>likes</span>
+                                </span>
+                            </div>
+
+                            <div class="col pt-2 font-bg delays hidden">
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram instagram-icn"></i>
+                                </a>
+                                <span style="font-size: 0.86rem;">
+                                    <span class="d-block fw-bold">20.5k</span>
+                                    <span>likes</span>
+                                </span>
+                            </div>
+
+                            <div class="col pt-2 font-bg delays hidden">
+                                <a href="#">
+                                    <i class="fa-brands fa-pinterest" style="font-size: 1.5rem; color: red;"></i>
+                                </a>
+                                <span style="font-size: 0.86rem;">
+                                    <span class="d-block fw-bold">20.5k</span>
+                                    <span>likes</span>
+                                </span>
+                            </div>
+
+                            <div class="col pt-2 font-bg delays hidden">
+                                <a href="#">
+                                    <i class="fa-brands fa-twitch"
+                                        style="font-size: 1.5rem; color: rgb(113, 33, 145);"></i>
+                                </a>
+                                <span style="font-size: 0.86rem;">
+                                    <span class="d-block fw-bold">20.5k</span>
+                                    <span>likes</span>
+                                </span>
+                            </div>
+
+                            <div class="col pt-2 font-bg delays hidden">
+                                <a href="#">
+                                    <i class="fa-brands fa-twitter"
+                                        style="font-size: 1.5rem; color: rgb(6, 177, 245);"></i>
+                                </a>
+                                <span style="font-size: 0.86rem;">
+                                    <span class="d-block fw-bold">20.5k</span>
+                                    <span>likes</span>
+                                </span>
+                            </div>
+
+                            <div class="col pt-2 font-bg delays hidden">
+                                <a href="#">
+                                    <i class="fa-brands fa-vimeo-v"
+                                        style="font-size: 1.5rem; color: rgb(103, 207, 248);"></i>
+                                </a>
+                                <span style="font-size: 0.86rem;">
+                                    <span class="d-block fw-bold">20.5k</span>
+                                    <span>likes</span>
+                                </span>
+                            </div>
+
+                            <div class="col pt-2 font-bg delays hidden">
+                                <a href="#">
+                                    <i class="fa-brands fa-youtube text-danger" style="font-size: 1.5rem;"></i>
+                                </a>
+                                <span style="font-size: 0.86rem;">
+                                    <span class="d-block fw-bold">20.5k</span>
+                                    <span>likes</span>
+                                </span>
+                            </div>
+
+                            <div class="col pt-2 font-bg delays hidden">
+                                <a href="#">
+                                    <i class="fa-brands fa-linkedin-in" style="font-size: 1.5rem; color: #335ebb;"></i>
+                                </a>
+                                <span style="font-size: 0.86rem;">
+                                    <span class="d-block fw-bold">20.5k</span>
+                                    <span>likes</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Pill Info-->
+                    <div class="container-lg p-0 my-5">
+
+                        <!--Pill=1-->
+                        <div class="container-fluid p-0 s-container delays hidden">
+
+                            <div class="s-box rounded-3">
+                                <div class="img-cnt" style="background-image: url(images/flowers.jpg);"></div>
+                            </div>
+                            <div class="s-content rounded-3">
+                                <span class="badge">Active</span>
+                                <span class="badge text-dark bg-light rounded-4">11</span>
+                            </div>
+                        </div>
+
+                        <!--Pill=2-->
+                        <div class="container-fluid p-0 s-container mt-2 delays hidden">
+
+                            <div class="s-box rounded-3">
+                                <div class="img-cnt" style="background-image: url(images/teapott.jpg);"></div>
+                            </div>
+                            <div class="s-content rounded-3">
+                                <span class="badge">Business</span>
+                                <span class="badge text-dark bg-light rounded-4">10</span>
+                            </div>
+                        </div>
+
+
+                        <!--Pill=3-->
+                        <div class="container-fluid p-0 s-container mt-2 delays hidden">
+
+                            <div class="s-box rounded-3">
+                                <div class="img-cnt" style="background-image: url(images/vally.jpeg);"></div>
+                            </div>
+                            <div class="s-content rounded-3">
+                                <span class="badge">Crazy</span>
+                                <span class="badge text-dark bg-light rounded-4">5</span>
+                            </div>
+                        </div>
+
+
+                        <!--Pill=4-->
+                        <div class="container-fluid p-0 s-container mt-2 delays hidden">
+
+                            <div class="s-box rounded-3">
+                                <div class="img-cnt" style="background-image: url(images/hiking.jpg);"></div>
+                            </div>
+                            <div class="s-content rounded-3">
+                                <span class="badge">Gaming</span>
+                                <span class="badge text-dark bg-light rounded-4">10</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!--Recent Post-->
+                    <div class="container-lg  p-0 d-flex flex-column hidden">
+
+                        <!--Heading-->
+                        <h3 class="d-flex fw-bold">Recent Posts</h3>
+                        <!--c1-->
+                        <div class="d-flex justify-content-en align-items-center mb-3" style="max-width: 100%;">
+                            <div class="container-fluid p-0 pe-2">
+                                <span class="badge text-light" style="background-color: plum;">TECHNO</span>
+                                <h5 class="my-2 fw-bold">Sitting right here waiting for you come to me</h5>
+                                <i class="text-secondary fa-solid fa-clock" style="font-size: 0.7rem;"> &nbsp; Sep
+                                    24,2022 </i>
+
+                            </div>
+                            <div class=" d-flex justify-content-end p-0">
+                                <img width="150px" height="150px" src="images/climb.jpg" class="img-fluid rounded-4"
+                                    alt="">
+                            </div>
+                        </div>
+
+                        <!--c2-->
+                        <div class="d-flex justify-content-en align-items-center my-3" style="max-width: 100%;">
+                            <div class="container-fluid p-0 pe-2">
+                                <span class="badge text-light" style="background-color: #ed1c1c;">ACTIVE</span>
+                                <h5 class="my-2 fw-bold">Before breakfast we have a great photo shoot</h5>
+                                <i class="text-secondary fa-solid fa-clock" style="font-size: 0.7rem;"> &nbsp; Sep
+                                    24,2022 </i>
+
+                            </div>
+                            <div class=" d-flex justify-content-end p-0">
+                                <img width="150px" height="150px" src="images/typer.jpg" class="img-fluid rounded-4"
+                                    alt="">
+                            </div>
+                        </div>
+
+
+                        <!--c3-->
+                        <div class="d-flex justify-content-en align-items-center my-3" style="max-width: 100%;">
+                            <div class="container-fluid p-0 pe-3">
+                                <span class="badge text-light" style="background-color: #ed1c1c;">ACTIVE</span>
+                                <h5 class="my-2 fw-bold">Beautiful flying bikes with simple style but look good</h5>
+                                <i class="text-secondary fa-solid fa-clock" style="font-size: 0.7rem;"> &nbsp; Sep
+                                    24,2022 </i>
+
+                            </div>
+                            <div class=" d-flex justify-content-end p-0">
+                                <img width="150px" height="150px" src="images/food.jpg" class="img-fluid rounded-4"
+                                    alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="container-lg p-0 cus-container mt-5">
+                        <div class="box rounded-4">
+                            <div class="img-cnt" style="background-image: url(images/graffiti.jpg);"></div>
+                        </div>
+                        <div class="new-content-align rounded-4">
+                            <div class="container-fluid mt-3">
+                                <div class="row align-items-center">
+                                    <div class="col-9"><span class="badge position"
+                                            style="background-color: #0015FF;">BUSINESS</span></div>
+                                    <div class="col text-center">
+                                        <i class="fa-solid fa-angle-left rounded-5 p-2"
+                                            style="background-color: rgba(255, 255, 255, 0.205);"></i>
+                                        <i class="fa-solid fa-angle-right rounded-5 p-2"
+                                            style="background-color: rgba(255, 255, 255, 0.205);"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="container mb-4">
+                                <h3 class="my-2" style="font-weight: 700;">It's always Fun Time and Smile In The Summer
+                                </h3>
+                                <div>
+                                    <span>
+                                        <img class="img-fluid rounded-circle" width="30px" height="30px"
+                                            src="images/favicon.jpg" alt="">
+                                        <a href="#" class="a-mod" style="color: white;">Anna Nikova</a>
+                                    </span>
+                                    <i class="fa-solid fa-clock ms-2" style="font-size: 0.7rem;">
+                                        &nbsp; Sep 24, 2022
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!--Bottom Crad Row-->
+            <!-- <div class="container-lg p-0 d-flex my-3 flex-wrap flex-lg-nowrap">
+                
+                <div class="card border rounded-0 border-0 pe-lg-3" style="width: 100%;">
+                    <span class="badge mt-3 ms-3 px-2 py-2"
+                        style="position: absolute; font-weight: 500; background-color: #36C942;">SPORTS</span>
+                    <img class="img-fluid rounded-4" src="images/menpool.jpg" alt="">
+                    <div class="card-body ps-0">
+                        <h6 class="fw-bold" style="font-size: 18px;">This place really good place for reading</h6>
+                        <div class="my-3">
+                            <span>
+                                <img class="img-fluid rounded-circle" width="30px" height="30px" src="images/favicon.jpg"
+                                    alt="">
+                                <a href="#" class="a-mod text-secondary">Anna Nikova</a>
+                            </span>
+                            <i class="fa-solid fa-clock ms-2 text-secondary" style="font-size: 0.7rem;">
+                                &nbsp; Sep 24, 2022
+                            </i>
+                        </div>
+                        
+                    </div>
+                </div>
+    
+                <div class="card border rounded-0 border-0 p-0" style="width: 100%;">
+                    <span class="badge mt-3 ms-3 px-2 py-2"
+                        style="position: absolute; font-weight: 500; background-color: #36C942;">SPORTS</span>
+                    <img class="img-fluid rounded-4" src="images/jungle.jpg" alt="">
+                    <div class="card-body ps-0">
+                        <h6 class="fw-bold" style="font-size: 18px;">Having fun with DJ and the best music drop</h6>
+                        <div class="my-3">
+                            <span>
+                                <img class="img-fluid rounded-circle" width="30px" height="30px" src="images/favicon.jpg"
+                                    alt="">
+                                <a href="#" class="a-mod text-secondary">Anna Nikova</a>
+                            </span>
+                            <i class="fa-solid fa-clock ms-2 text-secondary" style="font-size: 0.7rem;">
+                                &nbsp; Sep 24, 2022
+                            </i>
+                        </div>
+                        
+                    </div>
+                </div>
+    
+    
+                <div class="card border rounded-0 border-0 ps-lg-3" style="width: 100%;">
+                    <span class="badge mt-3 ms-3 px-2 py-2"
+                        style="position: absolute; font-weight: 500; background-color: #D800F9;">TECHNO</span>
+                    <img class="img-fluid rounded-4" src="images/building.jpg" alt="">
+                    <div class="card-body ps-0">
+                        <h6 class="fw-bold" style="font-size: 18px;">This guitar sound is so good and i need it more</h6>
+                        <div class="my-3">
+                            <span>
+                                <img class="img-fluid rounded-circle" width="30px" height="30px" src="images/favicon.jpg"
+                                    alt="">
+                                <a href="#" class="a-mod text-secondary">Anna Nikova</a>
+                            </span>
+                            <i class="fa-solid fa-clock ms-2 text-secondary" style="font-size: 0.7rem;">
+                                &nbsp; Sep 24, 2022
+                            </i>
+                        </div>
+                       
+                    </div>
+                </div>
+
+
+                <div class="card border rounded-0 border-0 ps-lg-3" style="width: 100%;">
+                    <span class="badge mt-3 ms-3 px-2 py-2"
+                        style="position: absolute; font-weight: 500; background-color: #D800F9;">TECHNO</span>
+                    <img class="img-fluid rounded-4" src="images/singer.jpg" alt="">
+                    <div class="card-body ps-0">
+                        <h6 class="fw-bold" style="font-size: 18px;">Technology can make your live easy and fast</h6>
+                        <div class="my-3">
+                            <span>
+                                <img class="img-fluid rounded-circle" width="30px" height="30px" src="images/favicon.jpg"
+                                    alt="">
+                                <a href="#" class="a-mod text-secondary">Anna Nikova</a>
+                            </span>
+                            <i class="fa-solid fa-clock ms-2 text-secondary" style="font-size: 0.7rem;">
+                                &nbsp; Sep 24, 2022
+                            </i>
+                        </div>
+                       
+                    </div>
+                </div>
+    
+    
+            </div>-->
+
+            <div class="container-lg mt-5 p-0 hidden">
+                <div class="owl-carousel owl-theme rounded-4">
+
+                    <div class="items">
+
+                        <div class="card border rounded-4 border-0 p-0" style="width: 100%;">
+                            <span class="badge mt-3 ms-3 px-2 py-2"
+                                style="position: absolute; font-weight: 500; background-color: #D800F9;">TECHNO</span>
+                            <img class="img-fluid rounded-4" src="images/menpool.jpg" alt="">
+                            <div class="card-body px-0">
+                                <h6 class="fw-bold" style="font-size: 18px;">This place really good place for reading
+                                </h6>
+                                <div class="my-3 d-flex">
+                                    <span class="d-flex align-items-center">
+                                        <div class="rounded-circle"
+                                            style="background-image: url(images/favicon.jpg); width: 30px; height: 30px; background-size: cover;">
+                                        </div>
+                                        <a href="#" class="a-mod text-secondary p-1">Anna Nikova</a>
+                                        <i class="fa-solid fa-clock ms-2 text-secondary" style="font-size: 0.7rem;">
+                                            Sep 24, 2022
+                                        </i>
+                                    </span>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="items">
+                        <div class="card border rounded-0 border-0 p-0" style="width: 100%;">
+                            <span class="badge mt-3 ms-3 px-2 py-2"
+                                style="position: absolute; font-weight: 500; background-color: #D800F9;">TECHNO</span>
+                            <img class="img-fluid rounded-4" src="images/jungle.jpg" alt="">
+                            <div class="card-body px-0">
+                                <h6 class="fw-bold" style="font-size: 18px;">Having fun with DJ and the best music drop
+                                </h6>
+                                <div class="my-3 d-flex">
+                                    <span class="d-flex align-items-center">
+                                        <div class="rounded-circle"
+                                            style="background-image: url(images/favicon.jpg); width: 30px; height: 30px; background-size: cover;">
+                                        </div>
+                                        <a href="#" class="a-mod text-secondary p-1">Anna Nikova</a>
+                                        <i class="fa-solid fa-clock ms-2 text-secondary" style="font-size: 0.7rem;">
+                                            Sep 24, 2022
+                                        </i>
+                                    </span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="card border rounded-4 border-0 p-0" style="width: 100%;">
+                            <span class="badge mt-3 ms-3 px-2 py-2"
+                                style="position: absolute; font-weight: 500; background-color: #36C942;">SPORTS</span>
+                            <img class="img-fluid rounded-4" src="images/building.jpg" alt="">
+                            <div class="card-body px-0">
+                                <h6 class="fw-bold" style="font-size: 18px;">This guitar sound is so good and i need it
+                                    more
+                                </h6>
+                                <div class="my-3 d-flex">
+                                    <span class="d-flex align-items-center">
+                                        <div class="rounded-circle"
+                                            style="background-image: url(images/favicon.jpg); width: 30px; height: 30px; background-size: cover;">
+                                        </div>
+                                        <a href="#" class="a-mod text-secondary p-1">Anna Nikova</a>
+                                        <i class="fa-solid fa-clock ms-2 text-secondary" style="font-size: 0.7rem;">
+                                            Sep 24, 2022
+                                        </i>
+                                    </span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="card border rounded-4 border-0 p-0 " style="width: 100%;">
+                            <span class="badge mt-3 ms-3 px-2 py-2"
+                                style="position: absolute; font-weight: 500; background-color: #36C942;">SPORTS</span>
+                            <img class="img-fluid rounded-4" src="images/singer.jpg" alt="">
+                            <div class="card-body px-0">
+                                <h6 class="fw-bold" style="font-size: 18px;">Technology can make your live easy and fast
+                                </h6>
+                                <div class="my-3 d-flex">
+                                    <span class="d-flex align-items-center">
+                                        <div class="rounded-circle"
+                                            style="background-image: url(images/favicon.jpg); width: 30px; height: 30px; background-size: cover;">
+                                        </div>
+                                        <a href="#" class="a-mod text-secondary p-1">Anna Nikova</a>
+                                        <i class="fa-solid fa-clock ms-2 text-secondary" style="font-size: 0.7rem;">
+                                            Sep 24, 2022
+                                        </i>
+                                    </span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="card border rounded-4 border-0 p-0" style="width: 100%;">
+                            <span class="badge mt-3 ms-3 px-2 py-2"
+                                style="position: absolute; font-weight: 500; background-color: #D800F9;">TECHNO</span>
+                            <img class="img-fluid rounded-4" src="images/singer.jpg" alt="">
+                            <div class="card-body px-0">
+                                <h6 class="fw-bold" style="font-size: 18px;">Technology can make your live easy and fast
+                                </h6>
+                                <div class="my-3 d-flex">
+                                    <span class="d-flex align-items-center">
+                                        <div class="rounded-circle"
+                                            style="background-image: url(images/favicon.jpg); width: 30px; height: 30px; background-size: cover;">
+                                        </div>
+                                        <a href="#" class="a-mod text-secondary p-1">Anna Nikova</a>
+                                        <i class="fa-solid fa-clock ms-2 text-secondary" style="font-size: 0.7rem;">
+                                            Sep 24, 2022
+                                        </i>
+                                    </span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="card border rounded-4 border-0 p-0" style="width: 100%;">
+                            <span class="badge mt-3 ms-3 px-2 py-2"
+                                style="position: absolute; font-weight: 500; background-color: #D800F9;">TECHNO</span>
+                            <img class="img-fluid rounded-4" src="images/singer.jpg" alt="">
+                            <div class="card-body px-0">
+                                <h6 class="fw-bold" style="font-size: 18px;">Technology can make your live easy and fast
+                                </h6>
+                                <div class="my-3 d-flex">
+                                    <span class="d-flex align-items-center">
+                                        <div class="rounded-circle"
+                                            style="background-image: url(images/favicon.jpg); width: 30px; height: 30px; background-size: cover;">
+                                        </div>
+                                        <a href="#" class="a-mod text-secondary p-1">Anna Nikova</a>
+                                        <i class="fa-solid fa-clock ms-2 text-secondary" style="font-size: 0.7rem;">
+                                            Sep 24, 2022
+                                        </i>
+                                    </span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--Footer Container-->
+    <div class="container-fluid" style="background-color: black;">
+
+        <!--Main Parent(Social/Post/Badge) Container-->
+        <div class="container-lg d-flex flex-column flex-lg-row text-light py-5 p-0">
+            <!--Social Container-->
+            <div class="container-lg p-0 pe-lg-5 mb-5">
+                <h4 class="mb-3">About Us</h4>
+                <div class="container-lg p-0">
+                    <p class="text-muted pe-lg-3">
+                        Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet ut imperdiet eu, iaculis a sem
+                        imperdiet ut imperdiet.
+                    </p>
+                </div>
+                <div class="container-lg p-0">
+                    <ul class="list-unstyled d-flex flex-wrap gap-2">
+                        <li class="rounded-circle" style="background-color: #45629f;"><span
+                                class="bottom-round-social fa-brands fa-facebook-f"></span></li>
+                        <li class="rounded-circle" style="background-color: #dd4b39;"><span
+                                class="bottom-round-social fa-brands fa-google-plus-g"></span></li>
+                        <li class="rounded-circle" style="background-color: #0b66ff;"><span
+                                class="bottom-round-social fa-brands fa-behance"></span></li>
+                        <li class="rounded-circle" style="background-color: #1ab7ea;"><span
+                                class="bottom-round-social fa-brands fa-vimeo"></span></li>
+                        <li class="rounded-circle" style="background-color: #ed1c1c;"><span
+                                class="bottom-round-social fa-brands fa-youtube"></span></li>
+                        <li class="rounded-circle" style="background-color: #34465d;"><span
+                                class="bottom-round-social fa-brands fa-tumblr"></span></li>
+                        <li class="rounded-circle" style="background-color: #3f729b;"><span
+                                class="bottom-round-social fa-brands fa-instagram"></span></li>
+                        <li class="rounded-circle" style="background-color: #0077b5;"><span
+                                class="bottom-round-social fa-brands fa-linkedin-in"></span></li>
+                        <li class="rounded-circle" style="background-color: #ed1c1c;"><span
+                                class="bottom-round-social fa-brands fa-pinterest"></span></li>
+                        <li class="rounded-circle" style="background-color: #1ab7ea;"><span
+                                class="bottom-round-social fa-brands fa-twitter"></span></li>
+                        <li class="rounded-circle" style="background-color: #34465d;"><span
+                                class="bottom-round-social fa-brands fa-deviantart"></span></li>
+                        <li class="rounded-circle" style="background-color: #ea4c89;"><span
+                                class="bottom-round-social fa-brands fa-dribbble"></span></li>
+                        <li class="rounded-circle" style="background-color: #007ee5;"><span
+                                class="bottom-round-social fa-brands fa-dropbox"></span></li>
+                        <li class="rounded-circle" style="background-color: #ff6600;"><span
+                                class="bottom-round-social fa-solid fa-rss"></span></li>
+                        <li class="rounded-circle" style="background-color: #1ab7ea;"><span
+                                class="bottom-round-social fa-brands fa-skype"></span></li>
+                        <li class="rounded-circle" style="background-color: #eb4924;"><span
+                                class="bottom-round-social fa-brands fa-stumbleupon"></span></li>
+                        <li class="rounded-circle" style="background-color: #21759b;"><span
+                                class="bottom-round-social fa-brands fa-wordpress"></span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Recent Post Container-->
+            <div class="container-lg px-lg-3 p-0 mb-5">
+                <div class="container-lg d-flex flex-column p-0">
+
+                    <!--Heading-->
+                    <h4 class=" mb-3">Recent Posts</h4>
+                    <!--c1-->
+                    <div class="d-flex align-items-center mb-3" style="max-width: 100%;">
+                        <div class="container-fluid p-0 pe-2">
+                            <span class="badge text-light" style="background-color: #36C942;">SPORTS</span>
+                            <h6 class="my-2 fw-bold">Sitting right here waiting for you come to me</h6>
+                            <i class="fa-solid fa-clock" style="font-size: 0.7rem;"> &nbsp; Sep
+                                24, 2022 </i>
+
+                        </div>
+                        <div class=" d-flex p-0">
+                            <img width="150px" height="150px" src="images/climb.jpg" class="img-fluid rounded-4" alt="">
+                        </div>
+                    </div>
+
+                    <!--c2-->
+                    <div class="d-flex align-items-center my-3" style="max-width: 100%;">
+                        <div class="container-fluid p-0 pe-2">
+                            <span class="badge text-light" style="background-color: #ed1c1c;">ACTIVE</span>
+                            <h6 class="my-2 fw-bold">Before breakfast we have a great photo shoot</h6>
+                            <i class="fa-solid fa-clock" style="font-size: 0.7rem;"> &nbsp; Sep
+                                24, 2022 </i>
+
+                        </div>
+                        <div class=" d-flex p-0">
+                            <img width="150px" height="150px" src="images/typer.jpg" class="img-fluid rounded-4" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Badge Container-->
+            <div class="container-lg p-0 ps-lg-5 mb-5">
+                <h4 class="mb-3">Categories</h4>
+                <!--Badges-->
+                <div class="d-flex justify-content-between py-2 align-items-center border-bottom border-light"
+                    style="--bs-border-opacity: .2;">
+                    <span>Active</span>
+                    <span class="badge rounded-5 nBadges d-flex text-center align-items-center justify-content-center"
+                        style="background-color: #ed1c1c;">11</span>
+                </div>
+
+                <div class="d-flex justify-content-between py-2 align-items-center border-bottom border-light"
+                    style="--bs-border-opacity: .2;">
+                    <span>Business</span>
+                    <span class="badge rounded-5 nBadges d-flex text-center align-items-center justify-content-center"
+                        style="background-color: #0015ff;">10</span>
+                </div>
+
+                <div class="d-flex justify-content-between py-2 align-items-center border-bottom border-light"
+                    style="--bs-border-opacity: .2;">
+                    <span>Crazy</span>
+                    <span class="badge rounded-5 nBadges d-flex text-center align-items-center justify-content-center"
+                        style="background-color: #d1783c;">5</span>
+                </div>
+
+                <div class="d-flex justify-content-between py-2 align-items-center border-bottom border-light"
+                    style="--bs-border-opacity: .2;">
+                    <span>Gaming</span>
+                    <span class="badge rounded-5 nBadges d-flex text-center align-items-center justify-content-center"
+                        style="background-color: #6b34ba;">10</span>
+                </div>
+
+                <div class="d-flex justify-content-between py-2 align-items-center border-bottom border-light"
+                    style="--bs-border-opacity: .2;">
+                    <span>Health</span>
+                    <span class="badge rounded-5 nBadges d-flex text-center align-items-center justify-content-center"
+                        style="background-color: #D66300;">6</span>
+                </div>
+
+                <div class="d-flex justify-content-between py-2 align-items-center border-bottom border-light"
+                    style="--bs-border-opacity: .2;">
+                    <span>Science</span>
+                    <span class="badge rounded-5 nBadges d-flex text-center align-items-center justify-content-center"
+                        style="background-color: #7fbc1e;">4</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Privacy main container-->
+        <div class="container-fluid border-top border-light" style="--bs-border-opacity: .2;">
+            <div class="container-lg">
+                <div class="row  pt-4 pb-2 p-0 ">
+                    <div class="col-lg-8 text-secondary px-0">© Copyright 2019 Jellywp. All Rights Reserved Powered by
+                        Jellywp</div>
+                    <div
+                        class="col px-0 d-flex align-items-center justify-content-lg-between justify-content-around  pt-2 pt-lg-0">
+                        <span><a class="text-decoration-none text-secondary" href="#">About Us</a></span>
+                        <span><a class="text-decoration-none text-secondary" href="#">Privacy policy</a></span>
+                        <span><a class="text-decoration-none text-secondary" href="#">Forums</a></span>
+                        <span><a class="text-decoration-none text-secondary" href="#">Comunity</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <script src="OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <!--Bootstrap cdn-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+
+
+    <!--External JS File-->
+    <script src="js/index.js" translate="text/script"></script>
+
+</body>
+
+</html>
