@@ -34,7 +34,13 @@
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                    Search for desired blog..
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">SEARCH</span>
+                        <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                            aria-describedby="basic-addon1">
+                    </div>
+
                 </div>
 
                 <!-- Modal footer -->
@@ -78,7 +84,7 @@
 
                 <div class="navbar-brand text-light ms-auto me-0" style="font-size: 0.82rem;">
                     <span class="px-3 py-1 rounded-pill" style="background-color: rgba(255, 255, 255, 0.211);">Current
-                        Date:</span> &nbsp;17 August,2022
+                        Date:</span> &nbsp;<span id="date"></span>
                 </div>
 
             </div>
@@ -140,21 +146,107 @@
                         </li>
 
                         <!--Business-->
-                        <li class="nav-item">
-                            <div class="dropdown">
-                                <a class="nav-link text-black" data-bs-toggle="dropdown" aria-expanded="false" href="#">
-                                    Business
-                                    <div class="badge rounded-pill"
-                                        style="font-size:0.5rem; background-color: #F74539;">Hot
+                        <li class="nav-item" id="poper">
+                            <a class="nav-link text-black" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                                Business
+                                <div class="badge rounded-pill" style="font-size:0.5rem; background-color: #F74539;">Hot
+                                </div>
+                                <span class="fa-solid fa-chevron-down" style="font-size:0.5rem;"></span>
+                            </a>
+                            <!--Drop Down Content-->
+                            <div class="container-fluid position-absolute start-0 d-none Yhidden" id="pop"
+                                style="z-index: 1000;">
+
+                                <div class="container mt-0 rounded px-2 xColor">
+                                    <!--Flex Container_One Wrap-->
+                                    <div class="container-lg p-0  gap-2 d-flex my-3 flex-wrap flex-lg-nowrap"
+                                        style="background-color: white;">
+
+                                        <div class="card border border-0 p-3 " style="width: 100%;">
+                                            <span class="badge mt-3 ms-3 py-2 px-3"
+                                                style="position: absolute; font-weight: 500; background-color: #d66300;">Science</span>
+                                            <img class="img-fluid rounded-4" src="images/s-iris.jpg" alt="">
+                                            <div class="card-body p-0 pe-1 pt-3">
+                                                <h5>This is A Great Phone for Shooting</h5>
+                                                <div class="mt-3">
+                                                    <span>
+                                                        <img class="img-fluid rounded-circle" width="30px" height="30px"
+                                                            src="images/favicon.jpg" alt="">
+                                                        <a href="#" class="a-mod text-secondary">Anna Nikova</a>
+                                                    </span>
+                                                    <i class="fa-solid fa-clock ms-2 text-secondary"
+                                                        style="font-size: 0.7rem;">
+                                                        &nbsp; Sep 24, 2022
+                                                    </i>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="card border border-0 p-3 " style="width: 100%;">
+                                            <span class="badge mt-3 ms-3 py-2 px-3"
+                                                style="position: absolute; font-weight: 500; background-color: #d66300;">Science</span>
+                                            <img class="img-fluid rounded-4" src="images/s-crowd.jpg" alt="">
+                                            <div class="card-body p-0 pe-1 pt-3">
+                                                <h5>This is A Great Phone for Shooting</h5>
+                                                <div class="mt-3">
+                                                    <span>
+                                                        <img class="img-fluid rounded-circle" width="30px" height="30px"
+                                                            src="images/favicon.jpg" alt="">
+                                                        <a href="#" class="a-mod text-secondary">Anna Nikova</a>
+                                                    </span>
+                                                    <i class="fa-solid fa-clock ms-2 text-secondary"
+                                                        style="font-size: 0.7rem;">
+                                                        &nbsp; Sep 24, 2022
+                                                    </i>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="card border border-0 p-3 " style="width: 100%;">
+                                            <span class="badge mt-3 ms-3 py-2 px-3"
+                                                style="position: absolute; font-weight: 500; background-color: #d66300;">Science</span>
+                                            <img class="img-fluid rounded-4" src="images/s-pool.jpg" alt="">
+                                            <div class="card-body p-0 pe-1 pt-3">
+                                                <h5>This is A Great Phone for Shooting</h5>
+                                                <div class="mt-3">
+                                                    <span>
+                                                        <img class="img-fluid rounded-circle" width="30px" height="30px"
+                                                            src="images/favicon.jpg" alt="">
+                                                        <a href="#" class="a-mod text-secondary">Anna Nikova</a>
+                                                    </span>
+                                                    <i class="fa-solid fa-clock ms-2 text-secondary"
+                                                        style="font-size: 0.7rem;">
+                                                        &nbsp; Sep 24, 2022
+                                                    </i>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="card border border-0 p-3 " style="width: 100%;">
+                                            <span class="badge mt-3 ms-3 py-2 px-3"
+                                                style="position: absolute; font-weight: 500; background-color: #d66300;">Science</span>
+                                            <img class="img-fluid rounded-4" src="images/veg.jpg" alt="">
+                                            <div class="card-body p-0 pe-1 pt-3">
+                                                <h5>This is A Great Phone for Shooting</h5>
+                                                <div class="mt-3">
+                                                    <span>
+                                                        <img class="img-fluid rounded-circle" width="30px" height="30px"
+                                                            src="images/favicon.jpg" alt="">
+                                                        <a href="#" class="a-mod text-secondary">Anna Nikova</a>
+                                                    </span>
+                                                    <i class="fa-solid fa-clock ms-2 text-secondary"
+                                                        style="font-size: 0.7rem;">
+                                                        &nbsp; Sep 24, 2022
+                                                    </i>
+                                                </div>
+
+                                            </div>
+                                        </div>
                                     </div>
-                                    <span class="fa-solid fa-chevron-down" style="font-size:0.5rem;"></span>
-                                </a>
-                                <ul class="dropdown-menu mt-3 py-1">
-                                    <li><a class="dropdown-item border-bottom border-secondary" href="#">Action</a></li>
-                                    <li><a class="dropdown-item border-bottom border-secondary" href="#">Another
-                                            action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                                </div>
                             </div>
                         </li>
 

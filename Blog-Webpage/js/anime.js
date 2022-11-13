@@ -2,7 +2,6 @@
 const observer = new  IntersectionObserver((entries)=>{
 
     entries.forEach((entry) => {
-        console.log(entry)
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
         } else {
@@ -14,18 +13,35 @@ const observer = new  IntersectionObserver((entries)=>{
 });
 
 
-const hidenElements =document.querySelectorAll('.hidden');
+const hidenElements = document.querySelectorAll('.hidden');
 hidenElements.forEach((el) => observer.observe(el));
 
 
 
+
+//TOP-Y-axis
+const observerY = new  IntersectionObserver((entries)=>{
+
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('Yshow');
+        } else {
+            entry.target.classList.remove('Yshow');
+        }
+    });
+    
+    
+});
+
+
+const hidenElementsY = document.querySelectorAll('.Yhidden');
+hidenElementsY.forEach((el) => observerY.observe(el));
 
 
 //left x-aixs
 const observerX = new  IntersectionObserver((entries)=>{
 
     entries.forEach((entry) => {
-        console.log(entry)
         if (entry.isIntersecting) {
             entry.target.classList.add('Lxshow');
         } else {
@@ -49,7 +65,6 @@ hidenElementsX.forEach((el) => observerX.observe(el));
 const observerR = new  IntersectionObserver((entries)=>{
 
     entries.forEach((entry) => {
-        console.log(entry)
         if (entry.isIntersecting) {
             entry.target.classList.add('Rxshow');
         } else {
